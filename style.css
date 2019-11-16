@@ -1,0 +1,311 @@
+body {
+    
+    background: lightblue url("style/images/everest1.jpg") no-repeat fixed center;
+    color: snow;
+    font-family: sans-serif;
+    }
+
+h1 {
+    display: inline;
+}
+
+
+.top {
+
+    border: white solid 1px;
+
+}
+
+
+.top.globalnav ul{
+    margin: 0;
+    padding: 0;
+    
+}
+.top.globalnav li{
+    display: inline;
+}
+
+
+.middle {
+    border: white solid 1px;
+}
+
+footer {
+    border: white solid 1px;
+    height: 100px;
+}
+
+.headercontent {
+    background: transparent;
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto 
+    auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+    grid-template-areas:
+    "br br br br"
+    "gn gn ts ts";
+    margin-bottom: 10px;
+
+    
+}
+
+.top {
+    font-size: 20px;
+    height: 50px;
+    width: auto;
+    }
+
+.brand {
+    
+    grid-area: br;
+    font-size: 20px;
+}
+.globalnav {
+    
+    
+    grid-area: gn;
+}
+
+.tools {
+    
+    grid-area: ts;
+}
+
+.middlecontent {
+    width: 100%;
+    display:grid;
+    font-size: 20px;
+    background: transparent;       
+    grid-gap:10px;
+    margin-bottom: 10px;
+}
+
+.middle {
+    width: auto;
+}
+
+
+.footercontent {
+    display:grid;
+    
+}
+
+.herofeature {
+    grid-area: hf;
+    
+    
+}
+
+.herocall {
+    grid-area: hc;
+    font-size: 25px;
+    
+
+}
+.articlefeature {
+    grid-area: af;
+    
+}
+.addy {
+    grid-area: ay;
+    color: rgb(112, 18, 18);
+    
+}
+
+.articlelisting {
+    grid-area: al;
+    
+}
+
+.sidebar {
+    grid-area: sb;
+    
+}
+
+button:hover {
+    animation-name: buttonchange;
+    animation-duration: 500ms;
+  }
+
+@keyframes buttonchange {
+  100% {
+    background-color: #4791d0;
+  }
+}
+
+
+
+
+
+
+    @media only screen and (min-width: 576px) {
+
+        .top {
+            height: 100px;
+                   }    
+
+        .middle {
+            height: 100px;
+
+                }
+
+        .articlefeature, .addy{
+            height:200px;
+        } 
+
+        .middle.articlelisting {
+            height:500px;
+        }
+        
+        
+        .headercontent {
+                
+            grid-template-columns: auto auto auto auto auto auto auto auto auto 100px 100px 100px;
+            grid-template-rows: auto;
+            grid-template-areas:
+            "br br br gn gn gn gn gn gn ts ts ts";
+            
+           
+        }
+    
+    
+        .middlecontent {
+            
+            grid-template-columns: auto auto auto auto auto auto auto auto auto 100px 100px 100px;
+            grid-template-rows: auto auto auto auto auto;
+            grid-template-areas: 
+            "hf hf hf hf hf hf hf hf hf hf hf hf"
+            "hc hc hc hc hc hc hc hc hc hc hc hc"
+            "af af af af af af af af af ay ay ay"
+            "al al al al al al al al al al al al"
+            "sb sb sb sb sb sb sb sb sb sb sb sb";
+        
+            }
+        
+    }
+
+    
+    
+
+    @media only screen and (max-width: 575px) {
+
+        .top {
+
+            border: none;
+        
+        }
+                               
+        .middle {
+            border: none;
+        }
+        
+        footer {
+            border: none;
+            background-color: rgb(92, 92, 255);
+            
+        }
+
+
+
+
+
+
+        .top {  
+            height: auto;
+        }
+
+        
+        .middle.herocall {
+            height: auto;
+            text-align: center;
+            padding: 90px;
+               
+        }
+
+        
+
+        .middlecontent {
+            grid-template-columns: auto;
+            grid-template-rows: auto auto 102px auto;
+            grid-template-areas: 
+            "hc"
+            "af"
+            "ay"
+            "al";
+        }
+        
+        .herofeature {
+            display: none;
+        }
+        
+        .sidebar {
+            display: none;
+        }
+        
+        .headercontent {
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto;
+        grid-gap: 10px;
+        grid-template-areas:
+        "br br br br"
+        "gn gn ts ts";
+        background-color: rgb(92, 92, 255);
+        }
+
+
+        .addy {
+            background: url(style/images/addymobile1.jpg);
+            
+        }
+
+        .articlelisting {
+            height:auto;
+
+        }
+
+        ul {
+            display: inline;
+        }
+
+        
+        }
+    
+        @media only screen and (min-width: 992px) {
+
+            .headercontent {
+                
+                
+                
+                grid-template-columns: auto auto auto auto auto auto auto auto auto 11% 11% 11%;
+                grid-template-rows: auto;
+                grid-template-areas:
+                "br br br gn gn gn gn gn gn ts ts ts";
+               
+            }
+        
+        
+            .middlecontent {
+                
+                grid-template-columns: auto auto auto auto auto auto auto auto auto 11% 11% 11%;
+                grid-template-rows: auto auto;
+                grid-template-areas: 
+                "hf hf hf hf hf hf hc hc hc ay ay ay"
+                "af af af al al al al al al sb sb sb";
+            
+                }
+            .middle {
+                height: 100px;
+            }
+        }
+
+
+
+
+
+
+
+
+
