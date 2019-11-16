@@ -1,6 +1,6 @@
 body {
     
-    background: lightblue url("style/images/everest1.jpg") no-repeat fixed center;
+    background: lightblue url("style/images/everest3.jpg") no-repeat fixed center;
     color: snow;
     font-family: sans-serif;
     }
@@ -10,30 +10,30 @@ h1 {
 }
 
 
-.top {
-
-    border: white solid 1px;
-
-}
 
 
 .top.globalnav ul{
     margin: 0;
     padding: 0;
     
+
+    
 }
 .top.globalnav li{
     display: inline;
+    padding: 5px;
+        
 }
 
 
-.middle {
-    border: white solid 1px;
-}
+
 
 footer {
-    border: white solid 1px;
-    height: 100px;
+   
+    height: 60px;
+    padding: 20px;
+    text-align:center;
+    background-color:rgb(12,139,254)
 }
 
 .headercontent {
@@ -48,6 +48,7 @@ footer {
     "br br br br"
     "gn gn ts ts";
     margin-bottom: 10px;
+    background-color: rgb(12,139,254)
 
     
 }
@@ -62,16 +63,22 @@ footer {
     
     grid-area: br;
     font-size: 20px;
+    padding:5px;
+    color: black;
 }
 .globalnav {
-    
-    
+        
     grid-area: gn;
+    text-align: center;
+    padding: 10px;
+    
 }
 
 .tools {
     
     grid-area: ts;
+    text-align: center;
+    padding: 5px;
 }
 
 .middlecontent {
@@ -107,6 +114,7 @@ footer {
 }
 .articlefeature {
     grid-area: af;
+    text-align: justify;
     
 }
 .addy {
@@ -127,14 +135,17 @@ footer {
 
 button:hover {
     animation-name: buttonchange;
-    animation-duration: 500ms;
-  }
+    animation-duration: 2000ms;
+    
+
+}
 
 @keyframes buttonchange {
   100% {
-    background-color: #4791d0;
+    background-color: rgb(255, 134, 134);
   }
 }
+
 
 
 
@@ -144,47 +155,54 @@ button:hover {
     @media only screen and (min-width: 576px) {
 
         .top {
-            height: 100px;
+            height: auto;
                    }    
 
-        .middle {
-            height: 100px;
+        
 
+                .middle.herocall {
+                    height: auto;
+                    text-align: center;
+                    padding: 90px;
                 }
 
+
         .articlefeature, .addy{
-            height:200px;
+            height:auto;
         } 
 
         .middle.articlelisting {
-            height:500px;
+            height:auto;
         }
-        
-        
+                
         .headercontent {
                 
-            grid-template-columns: auto auto auto auto auto auto auto auto auto 100px 100px 100px;
+            grid-template-columns: auto auto auto;
             grid-template-rows: auto;
             grid-template-areas:
-            "br br br gn gn gn gn gn gn ts ts ts";
-            
-           
+            "br gn ts";
+             
         }
     
     
         .middlecontent {
             
-            grid-template-columns: auto auto auto auto auto auto auto auto auto 100px 100px 100px;
+            grid-template-columns: auto auto;
             grid-template-rows: auto auto auto auto auto;
             grid-template-areas: 
-            "hf hf hf hf hf hf hf hf hf hf hf hf"
-            "hc hc hc hc hc hc hc hc hc hc hc hc"
-            "af af af af af af af af af ay ay ay"
-            "al al al al al al al al al al al al"
-            "sb sb sb sb sb sb sb sb sb sb sb sb";
+            "hf hf"
+            "hc hc"
+            "af ay"
+            "al al"
+            "sb sb";
         
             }
         
+        .brand {
+            white-space: nowrap;
+        }
+
+
     }
 
     
@@ -204,13 +222,9 @@ button:hover {
         
         footer {
             border: none;
-            background-color: rgb(92, 92, 255);
+        
             
         }
-
-
-
-
 
 
         .top {  
@@ -252,7 +266,8 @@ button:hover {
         grid-template-areas:
         "br br br br"
         "gn gn ts ts";
-        background-color: rgb(92, 92, 255);
+        
+        ;
         }
 
 
@@ -279,26 +294,33 @@ button:hover {
                 
                 
                 
-                grid-template-columns: auto auto auto auto auto auto auto auto auto 11% 11% 11%;
+                grid-template-columns: auto auto auto;
                 grid-template-rows: auto;
                 grid-template-areas:
-                "br br br gn gn gn gn gn gn ts ts ts";
+                "br gn ts";
                
             }
         
         
             .middlecontent {
                 
-                grid-template-columns: auto auto auto auto auto auto auto auto auto 11% 11% 11%;
+                grid-template-columns: auto auto auto;
                 grid-template-rows: auto auto;
                 grid-template-areas: 
-                "hf hf hf hf hf hf hc hc hc ay ay ay"
-                "af af af al al al al al al sb sb sb";
+                "hf hc ay"
+                "af al sb";
             
                 }
             .middle {
-                height: 100px;
+                height: auto;
             }
+
+            .middle.herocall {
+                height: auto;
+                text-align: center;
+                padding: 0px;
+
+
         }
 
 
