@@ -136,23 +136,40 @@ footer {
 button:hover {
     animation-name: buttonchange;
     animation-duration: 2000ms;
+    animation-iteration-count: infinite;
     
 
 }
 
 @keyframes buttonchange {
   100% {
-    background-color: rgb(255, 134, 134);
+    box-shadow: 10px 5px 5px snow;
+    scale: 2;
   }
+}
+
+.addy {
+    animation-name: colorplay;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorplay {
+    50% {
+        color: snow;
+    }
+    100% {
+        color: rgb(112, 18, 18);
+    }
 }
 
 
 
 
 
-
-
     @media only screen and (min-width: 576px) {
+
+       
 
         .top {
             height: auto;
@@ -168,8 +185,12 @@ button:hover {
 
 
         .articlefeature, .addy{
-            height:auto;
+            height:190px;
         } 
+        .addy {
+            background: url(style/images/rescuemid.jpg);
+            
+        }
 
         .middle.articlelisting {
             height:auto;
@@ -177,7 +198,7 @@ button:hover {
                 
         .headercontent {
                 
-            grid-template-columns: auto auto auto;
+            grid-template-columns: auto auto 214.28px;
             grid-template-rows: auto;
             grid-template-areas:
             "br gn ts";
@@ -210,31 +231,22 @@ button:hover {
 
     @media only screen and (max-width: 575px) {
 
-        .top {
-
-            border: none;
         
-        }
-                               
-        .middle {
-            border: none;
-        }
-        
-        footer {
-            border: none;
-        
-            
-        }
-
 
         .top {  
             height: auto;
+        }
+
+        .top.globalnav {
+            font-size: 16px;
+            
         }
 
         
         .middle.herocall {
             height: auto;
             text-align: center;
+            font-size: 20px;
             padding: 90px;
                
         }
@@ -267,23 +279,28 @@ button:hover {
         "br br br br"
         "gn gn ts ts";
         
-        ;
+        
         }
 
+        .middle.articlefeature {
+            font-size: 16px;
+        }
 
         .addy {
             background: url(style/images/addymobile1.jpg);
-            
+            font-size: 16px;
         }
 
         .articlelisting {
             height:auto;
-
+            font-size: 16px;
         }
 
-        ul {
-            display: inline;
+        footer {
+            font-size: 13px;
         }
+
+        
 
         
         }
