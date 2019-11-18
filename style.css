@@ -13,6 +13,7 @@ body {
 
 h1 {
     display: inline;
+    font-size: ;
 }
 
 a {
@@ -74,7 +75,7 @@ footer {
     grid-template-columns: auto 
     auto auto auto;
     grid-template-rows: auto auto;
-    grid-gap: 10px;
+    
     grid-template-areas:
     "br br br br"
     "gn gn ts ts";
@@ -93,13 +94,24 @@ footer {
 .brand {
     
     grid-area: br;
-    font-size: 20px;
+    font-size: 15px;
     padding:10px;
     color: black;
     align-self: center;
     justify-self: center;
+    vertical-align: center;
+    text-align: center;
+    
+    
 
 }
+
+.brand img {
+    float: top;
+}
+
+
+
 .globalnav {
         
     grid-area: gn;
@@ -124,7 +136,7 @@ footer {
     display:grid;
     font-size: 20px;
     background: transparent;       
-    grid-gap:20px;
+    
     margin-bottom: 10px;
 }
 
@@ -244,6 +256,7 @@ button:hover {
         .addy {
             background: url(style/images/rescuemid.jpg);
             background-repeat: no-repeat;
+            font-size: 16px;
         }
 
         .middle.articlelisting {
@@ -252,7 +265,7 @@ button:hover {
                 
         .headercontent {
                 
-            grid-template-columns: auto auto 214.28px;
+            grid-template-columns: 150px auto 214.28px;
             grid-template-rows: auto;
             grid-template-areas:
             "br gn ts";
@@ -262,7 +275,7 @@ button:hover {
     
         .middlecontent {
             
-            grid-template-columns: auto auto;
+            grid-template-columns: auto 214.28px;
             grid-template-rows: auto auto auto auto auto;
             grid-template-areas: 
             "hf hf"
@@ -273,10 +286,7 @@ button:hover {
         
             }
         
-        .brand {
-            white-space: nowrap;
-        }
-
+      
         .middle {
             padding: 10px;
         }
@@ -318,7 +328,7 @@ button:hover {
             "af"
             "ay"
             "al";
-            
+            gap: 10px;
         }
         
         .herofeature {
@@ -330,12 +340,12 @@ button:hover {
         }
         
         .headercontent {
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: auto auto;
         grid-template-rows: auto auto;
-        grid-gap: 10px;
+        gap: 10px;
         grid-template-areas:
-        "br br br br"
-        "gn gn ts ts";
+        "br br"
+        "gn ts";
         
         
         }
@@ -371,25 +381,35 @@ button:hover {
     
         @media only screen and (min-width: 992px) {
 
+.innercontainerdesk {
+    width: 992px;
+    margin: auto;
+}
+
+
+
             .headercontent {
                 
                 
                 
-                grid-template-columns: 250px auto 300px;
+                grid-template-columns: 150px auto 200px;
                 grid-template-rows: auto;
                 grid-template-areas:
                 "br gn ts";
+                gap: 10px;
                
             }
         
         
             .middlecontent {
                 
-                grid-template-columns: auto auto 300px;
-                grid-template-rows: 300px 300px;
+                grid-template-columns: 200px auto 298px 200px;
+                grid-template-rows: auto auto;
                 grid-template-areas: 
-                "hf hc ay"
-                "af al sb";
+                "hf hf hc ay"
+                "af al al sb";
+                gap: 30px;
+                
             
                 }
             .middle {
@@ -399,7 +419,7 @@ button:hover {
             .middle.herocall {
                 height: auto;
                 text-align: center;
-                padding: 20px;
+                padding: 10px;
                 width: 300px;
                 justify-self: right;
         }
@@ -407,6 +427,11 @@ button:hover {
         .addy {
             background-repeat: no-repeat;
         }
+
+        .middle.sidebar {
+            font-size: 12px;
+        }
+
 
     }
 
