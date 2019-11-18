@@ -365,8 +365,10 @@ button:hover {
         }
 
         .addy {
-            background: url(style/images/addymobile1.jpg);
+            background: url(style/images/addymobile2.jpg);
             font-size: 16px;
+            text-align: center;
+            padding: 30px
         }
 
         .articlelisting {
