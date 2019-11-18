@@ -1,10 +1,9 @@
 body {
     
-    background-position: top;
-    background: rgb(2, 46, 61) url("style/images/everest3.jpg") no-repeat fixed center;
+    background: rgb(14, 30, 36) url("style/images/everest3.jpg") no-repeat fixed center;
     color: snow;
     font-family: sans-serif;
-    
+    background-position: top;
     
     }
 
@@ -260,9 +259,6 @@ button:hover {
             background: url(style/images/rescuemid.jpg);
             background-repeat: no-repeat;
             font-size: 16px;
-            
-           
-            
         }
 
         .middle.articlelisting {
@@ -369,18 +365,9 @@ button:hover {
         }
 
         .addy {
-        width:100%;
-        overflow:hidden;
-        height: 100px;
-        font-size: 16px;
+            background: url(style/images/addymobile1.jpg);
+            font-size: 16px;
         }
-
-      .addyin {
-        margin: 0 auto;
-        background: url(style/images/addymobile1.jpg);
-        height: 100px;
-        
-      }
 
         .articlelisting {
             height:auto;
@@ -467,9 +454,4 @@ button:hover {
 
 
     }
-
-
-
-
-
 
